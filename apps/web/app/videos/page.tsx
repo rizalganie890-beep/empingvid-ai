@@ -1,0 +1,3 @@
+import Link from 'next/link'; import AppShell from '@/components/AppShell';
+const videos=[['1','Futuristic Surabaya','Coming Soon'],['2','Product Launch Reel','Draft'],['3','Coffee Brand Story','Ready']];
+export default function Videos(){return <AppShell><div className="topline"><h1>My Videos</h1><Link href="/generator" className="btn primary">Generate</Link></div><div className="grid grid3" style={{marginTop:25}}>{videos.map(v=><Link href={'/videos/'+v[0]} className="card" key={v[0]}><div style={{aspectRatio:'16/9',background:'#08090d',borderRadius:12,display:'grid',placeItems:'center'}}>▶</div><h3>{v[1]}</h3><span className="muted">{v[2]}</span></Link>)}</div></AppShell>}
