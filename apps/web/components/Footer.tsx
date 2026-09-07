@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function Footer(){return <footer className="footer"><div className="container"><div className="brand">EmpingVid <span>AI</span></div><p>AI video creation, made simple. Generator infrastructure is coming soon.</p><div className="navlinks"><Link href="/pricing">Pricing</Link><Link href="/help">Help</Link><Link href="/faq">FAQ</Link><Link href="/settings">Settings</Link></div></div></footer>}
