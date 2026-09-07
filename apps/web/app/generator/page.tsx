@@ -1,0 +1,2 @@
+import Link from 'next/link'; import AppShell from '@/components/AppShell';
+export default function Generator(){return <AppShell><div className="coming card"><div><span className="eyebrow">COMING SOON</span><h1>AI Video Generator</h1><p className="sub">GPU video generation sedang kami siapkan. Halaman ini sudah tersedia agar workflow produk bisa diuji sekarang.</p><div className="actions"><Link href="/pricing" className="btn primary">Explore Plans</Link><Link href="/templates" className="btn">Browse Templates</Link></div></div></div></AppShell>}
